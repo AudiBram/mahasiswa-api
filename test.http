@@ -1,0 +1,33 @@
+### Get all Mahasiswa
+GET http://localhost:8080/mahasiswa
+Accept: application/json
+
+### Create new Mahasiswa
+POST http://localhost:8080/mahasiswa
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nama": "Nama",
+  "usia": 20,
+  "gender": 0,
+  "tanggal": "2023-04-21 07:18:10"
+}
+
+### Get Mahasiswa by id
+GET http://localhost:8080/mahasiswa/1
+Accept: application/json
+
+### Update Mahasiswa by id
+PUT http://localhost:8080/mahasiswa/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nama": "Nama",
+  "usia": 20
+}
+
+### Delete Mahasiswa by id
+DELETE http://localhost:8080/mahasiswa/1
+Accept: application/json
